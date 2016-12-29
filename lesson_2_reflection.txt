@@ -1,7 +1,17 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+  It creates a .git folder, which is hidden in windows, that marks this
+  directory as a repository. You need to do this because you can't just check
+  random files into git, it also has a history of changes which is downloaded
+  with it. This prepares your directory to be something that can be checked in.
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+  the staging area is a subset of the working directory that you intend to
+  commit from the repository. This allows you to exactly control what you want
+  to add, in case there is something in your directory you don't want to add.
+  running git status shows you what changes  you are adding.
 
 How can you use the staging area to make sure you have one commit per logical
 change?

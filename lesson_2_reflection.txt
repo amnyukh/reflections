@@ -41,7 +41,13 @@ the diagram the way we do?
   merged based on time, but after this comparing two id's using diff makes
   strange results. use git show instead to make it compare one id to it's actual
   parent change. the branch label gets updated to the result of the merge as well.
-  
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+  Simple changes are handled by git correctly, but there is a risk of bugs in
+  case function names are over-written without both programmers noticing or other
+  conflicting changes. It is much faster than merging manually. Git also
+  provides a way to resolve conflicts by listing your version, the common version,
+  and then the other branch version in separate sections.
